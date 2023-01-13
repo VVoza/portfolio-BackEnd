@@ -29,7 +29,7 @@ import org.springframework.web.multipart.MultipartFile;
  *
  * @author victo
  */
-@CrossOrigin(origins = "http://localhost:4200", maxAge=3600)
+
 @RestController
 public class EduController {
     

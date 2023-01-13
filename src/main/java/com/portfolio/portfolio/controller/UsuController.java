@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author victo
  */
-@CrossOrigin(origins = "http://localhost:4200", maxAge=3600)
+
 @RestController
 public class UsuController {
     
