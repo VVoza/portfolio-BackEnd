@@ -1,4 +1,4 @@
-FROM amazoncorretto:17-alpine-jdk
+FROM eclipse-temurin:17-jdk-jammy
 
 MAINTAINER VVoza
 
