@@ -61,7 +61,7 @@ public class EduController {
     
     @PutMapping(value="/personas/{per_id}/educacion/edit/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Educacion editExperience(@PathVariable(value="per_id") Long per_id, @PathVariable(value="id") Long id,
-                                @RequestPart(value="educacion") Educacion eduNueva, @RequestPart(value="imagen") MultipartFile imagen) throws IOException{
+                                @RequestPart(value="educacion") Educacion eduNueva, @RequestPart(value="imagen", required=false) MultipartFile imagen) throws IOException{
         Educacion edu = eduserv.findEducacion(id);
         
         edu.setTitulo(eduNueva.getTitulo());
